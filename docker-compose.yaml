@@ -1,0 +1,14 @@
+version: '3'
+services:
+    agate:
+        container_name: agate
+        hostname: ${HOSTNAME}
+        ports:
+            - 1965:1965
+        volumes:
+            - ${DIR}:/var/gemini
+        image: lucaspbastos/agate
+        environment:
+          HOSTNAME: ${HOSTNAME}
+          LANG: ${LANG}
+        restart: unless-stopped
