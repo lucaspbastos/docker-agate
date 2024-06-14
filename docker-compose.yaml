@@ -9,6 +9,6 @@ services:
             - ${DIR}:/var/gemini
         image: lucaspbastos/agate
         environment:
-          AGATE_HOSTNAME: ${AGATE_HOSTNAME}
-          LANG: ${LANG}
+            AGATE_HOSTNAME: ${AGATE_HOSTNAME}
+            LANG: ${LANG}
         restart: unless-stopped

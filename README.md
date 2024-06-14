@@ -4,6 +4,6 @@ This is a Docker image for the [Agate Gemini Server](https://github.com/mbrubeck
 
 ## Environment Variables
 
-- HOSTNAME: hostname for the Gemini server
+- AGATE_HOSTNAME: hostname for the Gemini server
 - LANG: language, i.e. "en-US"
 - DIR: path to Gemini content
